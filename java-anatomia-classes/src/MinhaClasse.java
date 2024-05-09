@@ -1,8 +1,18 @@
 public class MinhaClasse {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {   
 
-        System.out.print ("Olá turma, sejam bem-vindos");
+        String primeiroNome = "Malanne Maelí";
+        String segundoNome = "Oliveira de Souza de Carvalho";
 
+        String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+
+        System.out.println(nomeCompleto);
+       
     }
+
+    public static String nomeCompleto (String primeiroNome, String segundoNome) {
+        return "Resultado do método: " + primeiroNome.concat(" ").concat(segundoNome);
+    }
+
 }
